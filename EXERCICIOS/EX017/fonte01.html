@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            /*
+            Medidas absolutas. Recomenda-se usar "px" (W3C).
+            cm, mm, in, [px], pt, pc 
+
+            Medidas relativas. Recomenda-se usar "em" (W3C).
+            [em], ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            /*  
+            shorthand font, utilizar ordem abaixo ( Transformar 4 linhas de código em 1 )
+            font-style, font-weight, font-size, font-family
+
+            font-style: italic;
+            font-weight: bolder; ( LIGHTER, NORMAL, BOLD, BOLDER )
+            font-size: 3em;
+            font-family: 'work sans', sans-serif;
+            */
+
+            font: italic bolder 3em 'work sans', sans-serif;
+                    }
+        
+        h2 {
+            font: bold 2em 'work sans' /* Tbm pode usar apenas 3 ou 2 atributos. Não tem o font-style. */
+        }
+
+
+        p {
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, eos doloribus reiciendis expedita, necessitatibus similique ad id aut eius quas ipsa voluptates sequi omnis incidunt odio totam. Id, voluptatum officiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum corrupti laborum suscipit exercitationem odio, ratione quisquam eligendi officia ipsam assumenda libero ea blanditiis, reprehenderit cumque praesentium quidem. Neque, laudantium officia?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nobis beatae minus fuga asperiores esse sunt fugit eos in, fugiat quaerat itaque, optio quae laboriosam? Dolore ad error itaque dolorem?</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore possimus nihil distinctio qui officiis, placeat nobis sed quo laboriosam optio omnis repellendus soluta debitis atque molestiae quam natus consequuntur ea!</p>
+</body>
+</html>
