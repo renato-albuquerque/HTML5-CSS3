@@ -14,7 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
-            position: relative;
+            position: relative; /* Estratégia para cabeçalho fixo. */
         }
 
         td, th {
@@ -35,8 +35,8 @@
             color: white;
         }
 
-        thead > tr > th {
-            position: sticky;
+        thead > tr > th { /* Estratégia para cabeçalho fixo. */
+            position: sticky; 
             top: -1px;
             background-color: gray;
         }
@@ -52,12 +52,13 @@
         a {
             text-decoration: none;
             color: black;
+            font-size: small;
         }   
 
         a:hover {
             text-decoration: underline;
+            color: brown;
         }
-
         
     </style>
 </head>
@@ -75,12 +76,19 @@
                 <TR>, <TD>, <TH>    
     -->
     <table>
-        <caption><a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">População das Unidades Federativas do Brasil</a></caption>
+        <caption>População das Unidades Federativas do Brasil <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">(Link)</a></caption>
         <thead>
             <tr>
                 <th scope="col" style="width: 100px;" class="align">Ordem</th>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 100px;">População</th>
+                <!-- Referente aos <th>: 
+                    Estratégia para ajudar as ferramentas de busca nos navegadores:
+                    Para os <th> onde os dados vêm abaixo (dados na coluna abaixo):
+                    Inserir: scope: "col"
+                    Para os <th> onde os dados vêm ao lado (na mesma linha):
+                    Inserir: scope: "row"
+                -->
             </tr>
         </thead>
         <tbody>
@@ -159,12 +167,26 @@
                 <td>Paraíba</td>
                 <td class="num">4.059.905</td>
             </tr> 
+            <tr>
+                <td>16</td>
+                <td>...</td>
+                <td class="num">...</td>
+            </tr> 
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de habitantes</th>
+                <!-- Referente aos <th>: 
+                    Estratégia para ajudar as ferramentas de busca nos navegadores:
+                    Para os <th> onde os dados vêm abaixo (dados na coluna abaixo):
+                    Inserir: scope: "col"
+                    Para os <th> onde os dados vêm ao lado (na mesma linha):
+                    Inserir: scope: "row"
+                -->
+
+
                 <td>-</td>
-                <td class="num"><strong>110.659.804</strong></td>
+                <td class="num"><strong>215.149.656</strong></td>
             </tr>
         </tfoot>
     </table>
