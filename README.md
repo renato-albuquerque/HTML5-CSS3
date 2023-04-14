@@ -1,4 +1,4 @@
 # HTML5-CSS3
- Curso de HTML5 e CSS3 do Curso em Vídeo.
+ HTML5 and CSS3 course from the "Curso em Vídeo", mentor Gustavo Guanabara.
 
- Estou aprendendo a criar sites e agora vou gerenciar meus repositórios.
+ I'm learning to create websites and now I'm going to manage my repositories.
